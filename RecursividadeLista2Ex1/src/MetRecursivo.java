@@ -47,6 +47,16 @@ public class MetRecursivo {
 		return a * fatorialDuplo(a - 2);
 	}
 
+	public static int calcularMDC(int x, int y) {
+		if (x == y) {
+			return x;
+		} else if (x > y) {
+			return calcularMDC(x - y, y);
+		} else {
+			return calcularMDC(y, x);
+		}
+	}
+
 
 }
 

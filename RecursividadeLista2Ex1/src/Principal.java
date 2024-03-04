@@ -48,6 +48,11 @@ public class Principal {
 		System.out.println(met.fatorialDuplo(num1));
 		break;
 
+	case 5:
+		num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		System.out.println(met.calcularMDC(num1, num2));
+		break;
 	
 	default:
 		System.out.println("Opção Inválida");
